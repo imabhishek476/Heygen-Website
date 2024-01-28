@@ -296,7 +296,7 @@ function SectionPurpleFeature() {
             </div>
         </section>
         <div className="background_section is-center">
-            <div className="blur_bg_black feature" ></div>
+            <div className="blur_bg_black feature" style={{width:'100%'}}></div>
         </div>
     </>
   )

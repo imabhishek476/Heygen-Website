@@ -54,7 +54,7 @@ function SectionDark() {
                         </div>
                     </div>
                 </div>
-                <div className="avatars_cards_wrapper">
+                <div className="avatars_cards_wrapper" style={{overflowX:'hidden'}}>
                     <div className="avatars_wrap">
                         <div className="avatars_row_wrap">
                             <div className="avatars_row">
@@ -1137,11 +1137,11 @@ function SectionDark() {
 
                         @keyframes avatar-left-horizontal {
                             from {
-                            transform: translateX(0);
+                            transform: translateX(-100);
                             }
 
                             to {
-                            transform: translateX(-100%);
+                            transform: translateX(0);
                             }
                         }
                         `}

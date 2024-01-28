@@ -430,7 +430,7 @@ function SectionVoices() {
                                             stroke-dasharray="1 2" />
                                     </svg></div>
                             </div>
-                            <div className="voices_videos_wrapper">
+                            <div className="voices_videos_wrapper" style={{width:'100%'}}>
                                 <div className="voice_script_card _4">
                                     <div className="voices_btn_wrap_voice">
                                         <div className="video_btn_square is-short">
@@ -526,14 +526,14 @@ function SectionVoices() {
                                 </div>
                             </div>
                         </div>
-                        <div className="ai_voice_script_bg" ></div>
+                        <div className="ai_voice_script_bg" style={{width:'100%'}}></div>
                     </div>
                 </div>
             </div>
         </section>
         <div className="background_section"><img
                 src="https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656c4edf1c49ad5ab27cd37b_blur-purple.svg"
-                alt=""  className="blur_bg_purple" />
+                alt=""  className="blur_bg_purple" style={{width:'100%'}} />
         </div>
     </>
   )

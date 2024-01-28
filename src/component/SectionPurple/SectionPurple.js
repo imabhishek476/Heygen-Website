@@ -241,7 +241,7 @@ function SectionPurple() {
             </div>
         </section>
         <div className="background_section is-under">
-            <div className="blur_bg_black" ></div>
+            <div className="blur_bg_black" style={{width:'100%'}}></div>
         </div>
         <Section2/>
     </>

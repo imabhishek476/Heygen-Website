@@ -5,7 +5,7 @@ function Section_2() {
   return (
     <>
         <section>
-            <div className="how_padding">
+            <div className="how_padding" style={{overflow:'auto'}}>
                 <div className="w-layout-blockcontainer heygen_container w-container">
                     <div className="div-block-273">
                         <h2 id="w-node-_9ddfc2ad-d786-57b7-abfc-64f9a18d17c3-8c4e74c2"
