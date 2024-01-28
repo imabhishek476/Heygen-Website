@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import MainFooter from './component/Footer/MainFooter';
+import HomeShowcase from './component/HomeShowcase/HomeShowcase';
+import Navbar from './component/navbar/navbar'
+import PageWrapper from './component/PageWrapper/PageWrapper'
+import PageWrapper2 from './component/PageWrapper2/PageWrapper2';
+import SectionContainer from './component/SectionContainer/SectionContainer';
+import SectionCreated from './component/SectionCreated/SectionCreated';
 
-function App() {
+import React, { useEffect } from 'react';
+
+
+
+const App = () => {
+  useEffect(() => {
+    if (window.top !== window) {
+      setTimeout(() => {
+          document.body.innerHTML = ''
+          console.log("working Innerhtml")
+      }, 1000);
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <PageWrapper/>
+      <HomeShowcase/>
+      <SectionCreated/>
+      <SectionContainer/>
+      <PageWrapper2/>
+      <MainFooter/>
+      
+    </>
   );
 }
 
